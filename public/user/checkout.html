@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libraries/xZoom/xzoom.min.css">
+    <link rel="stylesheet" href="libraries/gijgo/css/gijgo.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/scss/main.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Brand Logo" class="brand-logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Travel</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Service
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonial</a>
+                    </li>
+                </ul>
+                <form class="d-flex form-inline d-sm-block d-md-none">
+                    <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">Sign in</button>
+                </form>
+                <form class="d-flex form-inline my-2 my-lg-0 d-none d-md-block">
+                    <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">Sign in</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="section-detail-header"></section>
+        <section class="section-detail-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col p-0">
+                        <nav>
+                            <ol class="breadcrumb"> 
+                                <li class="breadcrumb-item">Paket Travel</li>
+                                <li class="breadcrumb-item">Details</li>
+                                <li class="breadcrumb-item active">Checkout</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 pl-lg-0">
+                        <div class="card card-detail">
+                            <h1>Who is going?</h1>
+                            <p>Trip to Ubud, Bali, Indonesia</p>
+                            <div class="attendee">
+                                <div class="responsive">
+                                    <table class="table text-center">
+                                        <thead>
+                                            <tr>
+                                                <td></td>
+                                                <td>Name</td>
+                                                <td>Nationality</td>
+                                                <td>Visa</td>
+                                                <td>Passport</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="images/avatar-4.png" alt="" height="60"></td>
+                                                <td class="align-middle">Angga Risky</td>
+                                                <td class="align-middle">IDN</td>
+                                                <td class="align-middle">N/A</td>
+                                                <td class="align-middle">Active</td>
+                                                <td class="align-middle"><img src="images/ic_remove.png" alt=""></td>
+                                            </tr><tr>
+                                                <td><img src="images/avatar-5.png" alt="" height="60"></td>
+                                                <td class="align-middle">Budi Santoso</td>
+                                                <td class="align-middle">IDN</td>
+                                                <td class="align-middle">N/A</td>
+                                                <td class="align-middle">Active</td>
+                                                <td class="align-middle"><img src="images/ic_remove.png" alt=""></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="member mt-3">
+                                <h2>Add Member</h2>
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="username" class="sr-only"></label>
+                                            <input type="text" class="form-control mb-2 mr-sm-2" id="Username" placeholder="Name">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="visa" class="sr-only"></label>
+                                            <select name="visa" id="visa" class="form-select mb-2 mr-sm-2">
+                                                <option value="">Visa</option>
+                                                <option value="">30 Days</option>
+                                                <option value="">N/A</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="passport" class="sr-only"></label>
+                                            <input class="datepicker" id="datepicker" placeholder="DOE Passport"/>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="submit" class="btn btn-now my-4 px-4">Add Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <h3 class="mt-2 mb-0">Note</h3>
+                                <p class="disclaimer mb-0">Your are only able to invite member that has registered in Nomads.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card card-detail card-right"> 
+                            <h2>Checkout Information</h2>
+                            <table class="trip-information">
+                                <tr>
+                                    <th width="50%">Members</th>
+                                    <td width="50%" class="text-right">2 person</td>
+                                </tr>
+                                <tr>
+                                    <th width="50%">Aditional Visa</th>
+                                    <td width="50%" class="text-right">$190,00</td>
+                                </tr>
+                                <tr>
+                                    <th width="50%">Trip Price</th>
+                                    <td width="50%" class="text-right">$80,00/person</td>
+                                </tr>
+                                <tr>
+                                    <th width="50%">Subtotal</th>
+                                    <td width="50%" class="text-right">$280,00</td>
+                                </tr>
+                                <tr>
+                                    <th width="50%">Total(+unique)</th>
+                                    <td width="50%" class="text-right text-total"><span class="text-blue">$279,</span><span class="text-orange">33</span></td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <h2>Payment Instruction</h2>
+                            <p class="payment-ins">Please complete your payment</p>
+                            <div class="bank">
+                                <div class="bank-item pb-3">
+                                    <img class="bank-image" src="images/ic_bank.png" alt="">
+                                    <div class="description">
+                                        <h3>PT. Nomads ID</h3>
+                                        <p>0881 8829 8800 <br> Bank Central Asia</p>
+                                    </div>
+                                    <div class="clearfix">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bank">
+                                <div class="bank-item pb-3">
+                                    <img class="bank-image" src="images/ic_bank.png" alt="">
+                                    <div class="description">
+                                        <h3>PT. Nomads ID</h3>
+                                        <p>0881 8829 8800 <br> Bank Central Asia</p>
+                                    </div>
+                                    <div class="clearfix">
+                                        
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="join-container">
+                            <a href="#" class="btn btn-join mt-3 py-2 col-12">I have made payment</a>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="#" class="text-muted">Cancel Booking</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    </main>
+
+    <footer class="section-footer mt-5 mb-4 border-top border-secondary">
+        <div class="container pt-5 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <h5>FEATURES</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Reviews</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Social Media</a></li>
+                                <li><a href="#">Affiliate</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>FEATURES</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Reviews</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Social Media</a></li>
+                                <li><a href="#">Affiliate</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>FEATURES</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Reviews</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Social Media</a></li>
+                                <li><a href="#">Affiliate</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>FEATURES</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Reviews</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Social Media</a></li>
+                                <li><a href="#">Affiliate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row border-top justify-content-center align-items-center pt-4">
+                <div class="col-auto text-gray-500 font-weight-light">
+                    2022 Copyright Nomads . All right reserved . Made in Bogor
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libraries/jquery/jquery-3.6.0.min.js"></script>
+    <script src="libraries/retinajs/retina.min.js"></script>
+    <script src="libraries/xZoom/xzoom.min.js"></script>
+    <script src="libraries/gijgo/js/gijgo.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.xzoom, .xzoom-gallery').xzoom({
+                zoomWidth: 500,
+                title: false,
+                tint: '#333',
+                Xoffset: 15,
+
+            });
+
+            $('.datepicker').datepicker({
+                uiLibrary: 'bootstrap4',
+                icons: {
+                    rightIcon: '<img src="images/ic_doe.png"/>'
+                }
+            })
+        });
+    </script>
+</body>
+</html>
