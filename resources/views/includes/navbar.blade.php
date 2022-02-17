@@ -28,10 +28,10 @@
             </li>
         </ul>
         <form class="d-flex form-inline d-sm-block d-md-none">
-            <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">Sign in</button>
+            <a href="{{ route('login') }}" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4 justify-items-center">Sign in</a>
         </form>
         <form class="d-flex form-inline my-2 my-lg-0 d-none d-md-block">
-            <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">Sign in</button>
+            <button href="{{ route('login') }}" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">Sign in</button>
         </form>
       </div>
     </div>

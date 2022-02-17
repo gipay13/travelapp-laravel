@@ -38,7 +38,7 @@ body {
 header {
     padding: 180px 0 165px;
     margin-top: -70px;
-    background-image: url('/Users/SIMRS01/Documents/Html/bootstrap/images/header-background.jpg');
+    background-image: url('/user/images/header-background.jpg');
     background-size: cover;
 
     h1, p {
@@ -137,7 +137,7 @@ header {
             .btn-travel-detail {
                 background-color: #FF9E53;
                 color: #fff;
-                
+
                 &:hover {
                     background-color: #FFAE6F;
                     color: #fff;
@@ -272,15 +272,15 @@ header {
     .card-detail {
         padding: 30px;
         border-radius: 11px;
-    
+
         h1 {
             font-size: 26px;
         }
-    
+
         h2 {
             font-size: 20px;
         }
-    
+
         p {
             font-size: 18px;
             color: #b1b1b1;
@@ -291,7 +291,7 @@ header {
             font-size: 14px;
             color: #071C4D;
         }
-        
+
         .trip-information {
             th {
                 font-weight: 300;
@@ -407,7 +407,7 @@ header {
     }
 
     p {
-        margin-bottom: 0;       
+        margin-bottom: 0;
     }
 
     .description {
@@ -455,7 +455,7 @@ header {
     background-color: #FF9E53;
     color: #fff;
     border-radius: 0;
-    
+
     &:hover {
         background-color: #FFAA69;
         color: #fff;
