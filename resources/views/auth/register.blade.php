@@ -33,8 +33,8 @@
             @csrf
 
             <div>
-                <label for="name" class="block font-medium text-sm text-gray-700">Name</label>
-                <input id="name" class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="off"/>
+                <label for="username" class="block font-medium text-sm text-gray-700">Username</label>
+                <input id="username" class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 w-full" type="text" name="username" :value="old('username')" required autofocus autocomplete="off"/>
             </div>
             <div class="mt-4">
                 <label for="email" class="block font-medium text-sm text-gray-700">Email</label>

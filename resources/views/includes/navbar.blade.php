@@ -27,12 +27,25 @@
                 <a class="nav-link" href="#">Testimonial</a>
             </li>
         </ul>
+        @guest
         <form class="d-flex form-inline d-sm-block d-md-none">
-            <a href="{{ route('login') }}" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4 justify-items-center">Sign in</a>
+            <botton href="{{ route('login') }}" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" type="button" onclick="event.preventDefault(); location.href='{{ route('login') }}';">Sign in</botton>
         </form>
         <form class="d-flex form-inline my-2 my-lg-0 d-none d-md-block">
-            <button href="{{ route('login') }}" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">Sign in</button>
+            <button href="{{ route('login') }}" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" type="button" onclick="event.preventDefault(); location.href='{{ route('login') }}';">Sign in</button>
         </form>
+        @endguest
+
+        @auth
+        <form class="d-flex form-inline d-sm-block d-md-none" method="post" action="{{ route('logout') }}">
+            @csrf
+            <button href="{{ route('login') }}" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">Sign out</button>
+        </form>
+        <form class="d-flex form-inline my-2 my-lg-0 d-none d-md-block" method="post" action="{{ route('logout') }}">
+            @csrf
+            <button href="{{ route('login') }}" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">Sign out</button>
+        </form>
+        @endauth
       </div>
     </div>
 </nav>
